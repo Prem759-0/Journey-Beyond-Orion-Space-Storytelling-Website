@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Journey Beyond Orion — A Voyage into the Unknown</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="stylesheet" href="styles.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+
+</head>
+<body>
+<canvas id="stars-canvas"></canvas>
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<nav>
+  <div class="logo-orion">ORION</div>
+  <ul class="nav-items">
+    <li><a href="#chapter-1">Mission</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#crew">Crew</a></li>
+    <li><a href="#mission-cta">Join</a></li>
+  </ul>
+  <button class="nav-mission">Launch Mission</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="mission-badge">MISSION: DEEP SPACE — ORION SECTOR</div>
+  <h1 class="hero-title">
+    <span class="title-beyond">Journey</span>
+    <span class="title-orion">BEYOND ORION</span>
+  </h1>
+  <p class="hero-desc">An interstellar voyage 2,400 light years from Earth. Humanity's boldest mission — six astronauts, one ship, infinite possibility.</p>
+  <div class="hero-btns">
+    <button class="btn-launch">Begin the Journey</button>
+    <button class="btn-map">View Star Map</button>
+  </div>
+  <div class="planets-hero">
+    <div class="p-center"></div>
+    <div class="orbit orbit-1"><div class="planet planet-a"></div></div>
+    <div class="orbit orbit-2"><div class="planet planet-b"></div></div>
+    <div class="orbit orbit-3"><div class="planet planet-c"></div></div>
+  </div>
+</section>
+
+<!-- CHAPTER 1 — DEPARTURE -->
+<div class="chapter" id="chapter-1">
+  <div class="chapter-content reveal-left">
+    <div class="chapter-num">Chapter 01 — Departure</div>
+    <h2 class="chapter-title" style="color:#6c63ff">Earth's Last<br>Sunrise</h2>
+    <p class="chapter-text">On March 14, 2041, the Orion Pathfinder broke atmosphere at Mach 12. The crew watched our blue marble shrink to a marble, then a star, then nothing. There is a peculiar silence when the last photon of home reaches your eye.</p>
+  </div>
+  <div class="chapter-visual reveal-right">
+    <div class="vis-planet p-depart"></div>
+  </div>
+</div>
+
+<!-- CHAPTER 2 — ASTEROID BELT -->
+<div class="chapter">
+  <div class="chapter-content reveal-right">
+    <div class="chapter-num">Chapter 02 — The Crossing</div>
+    <h2 class="chapter-title" style="color:#ff9966">Through the<br>Asteroid Belt</h2>
+    <p class="chapter-text">40,000 rocks. Some the size of cities. The AI navigation ran 11 million collision predictions per second. We threaded the needle at 0.8% the speed of light, close enough to feel the gravel against the hull.</p>
+  </div>
+  <div class="chapter-visual reveal-left">
+    <div class="vis-planet p-asteroid"></div>
+  </div>
+</div>
+
+<!-- CHAPTER 3 — GAS GIANTS -->
+<div class="chapter">
+  <div class="chapter-content reveal-left">
+    <div class="chapter-num">Chapter 03 — The Giants</div>
+    <h2 class="chapter-title" style="color:#FFD700">The Gas<br>Giant Field</h2>
+    <p class="chapter-text">We used Jupiter's gravity well to slingshot 18% closer to our target. As we swung past, we spent six hours in the shadow of its storms — each tempest larger than Earth. None of us spoke.</p>
+  </div>
+  <div class="chapter-visual reveal-right">
+    <div class="vis-planet p-gas" style="position:relative"><div class="planet-ring"></div></div>
+  </div>
+</div>
+
+<!-- CHAPTER 4 — ARRIVAL -->
+<div class="chapter">
+  <div class="chapter-content reveal-right">
+    <div class="chapter-num">Chapter 04 — The Destination</div>
+    <h2 class="chapter-title" style="color:#CE93D8">Betelgeuse<br>Proximity</h2>
+    <p class="chapter-text">We arrived at the observation boundary of Betelgeuse — a red supergiant 700 times wider than our sun. It fills half the sky. Every instrument is recording. Every crew member is weeping. This is why we came.</p>
+  </div>
+  <div class="chapter-visual reveal-left">
+    <div class="vis-planet p-final"></div>
+  </div>
+</div>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <h2 class="tl-title reveal" style="color:var(--accent3)">MISSION TIMELINE</h2>
+  <div class="timeline-track">
+    <div class="tl-item"><div class="tl-left reveal"><div class="tl-date">MAR 2041</div><div class="tl-event">Launch Day</div><div class="tl-note">Pathfinder departs Kennedy Space Center at 06:14 UTC</div></div><div class="tl-dot-wrap"><div class="tl-dot"></div></div><div class="tl-right"></div></div>
+    <div class="tl-item"><div class="tl-left"></div><div class="tl-dot-wrap"><div class="tl-dot" style="border-color:var(--accent2)"></div></div><div class="tl-right reveal"><div class="tl-date">APR 2041</div><div class="tl-event">Belt Crossing</div><div class="tl-note">22-day navigation through the asteroid field. No hull breaches.</div></div></div>
+    <div class="tl-item"><div class="tl-left reveal"><div class="tl-date">JUN 2041</div><div class="tl-event">Jupiter Slingshot</div><div class="tl-note">Gravity assist adds 0.18c to our velocity. Critical maneuver successful.</div></div><div class="tl-dot-wrap"><div class="tl-dot" style="border-color:var(--accent3)"></div></div><div class="tl-right"></div></div>
+    <div class="tl-item"><div class="tl-left"></div><div class="tl-dot-wrap"><div class="tl-dot"></div></div><div class="tl-right reveal"><div class="tl-date">2044</div><div class="tl-event">Deep Sleep</div><div class="tl-note">Crew enters cryosleep for the 2.4 light-year transit phase.</div></div></div>
+    <div class="tl-item"><div class="tl-left reveal"><div class="tl-date">2067</div><div class="tl-event">Arrival</div><div class="tl-note">We reach the observation boundary of Betelgeuse. First live imagery transmitted.</div></div><div class="tl-dot-wrap"><div class="tl-dot" style="border-color:var(--accent2)"></div></div><div class="tl-right"></div></div>
+  </div>
+</section>
+
+<!-- CREW -->
+<section id="crew">
+  <div class="reveal" style="margin-bottom:1rem">
+    <div style="font-family:'Orbitron',monospace;font-size:0.65rem;letter-spacing:0.3em;color:var(--accent2);text-transform:uppercase;margin-bottom:1rem">— The Six</div>
+    <h2 class="tl-title" style="text-align:left;margin-bottom:0">Meet the Crew</h2>
+  </div>
+  <div class="crew-grid">
+    <div class="crew-card reveal"><div class="crew-avatar">👩‍🚀</div><div class="crew-name">Dr. Yara Patel</div><div class="crew-role">Mission Commander</div><div class="crew-bio">Former ISRO director. Third deep-space mission. Expert in zero-gravity surgery and crisis leadership.</div></div>
+    <div class="crew-card reveal"><div class="crew-avatar">🧑‍🔬</div><div class="crew-name">Erik Solberg</div><div class="crew-role">Chief Astrophysicist</div><div class="crew-bio">Discovered two previously unknown stellar phenomenon. Published 80+ papers on supergiant behavior.</div></div>
+    <div class="crew-card reveal"><div class="crew-avatar">👩‍💻</div><div class="crew-name">Mei-Lin Zhang</div><div class="crew-role">AI Systems Lead</div><div class="crew-bio">Co-designed the Pathfinder navigation AI. Can fly the ship manually if all systems fail simultaneously.</div></div>
+    <div class="crew-card reveal"><div class="crew-avatar">👨‍⚕️</div><div class="crew-name">Dr. Kofi Mensah</div><div class="crew-role">Chief Medical Officer</div><div class="crew-bio">Specialized in long-duration space medicine. Pioneered the cryosleep protocol that made this journey possible.</div></div>
+    <div class="crew-card reveal"><div class="crew-avatar">🧑‍🔧</div><div class="crew-name">Lena Vasquez</div><div class="crew-role">Chief Engineer</div><div class="crew-bio">Designed the Pathfinder's ion drive. Rebuilt an engine mid-flight during a 2038 mission that saved 4 lives.</div></div>
+    <div class="crew-card reveal"><div class="crew-avatar">👩‍🎨</div><div class="crew-name">Asha Okonkwo</div><div class="crew-role">Mission Documentarian</div><div class="crew-bio">Award-winning filmmaker tasked with recording history. Her footage will outlast every living person on Earth.</div></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="mission-cta">
+  <div class="cta-wrap reveal">
+    <div class="cta-orb">JOIN THE<br>NEXT MISSION</div>
+    <p class="cta-sub">Applications for Orion Pathfinder II open in 2028. Be part of the crew that travels even further into the unknown. The universe is waiting.</p>
+    <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap">
+      <button class="btn-launch">Apply Now</button>
+      <button class="btn-map">Learn More</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-orion">JOURNEY BEYOND ORION</div>
+  <div class="footer-note">© 2041 Orion Space Foundation — All documentation classified until arrival</div>
+  <div style="display:flex;gap:1.5rem">
+    <a href="#" style="font-size:0.7rem;color:var(--muted);text-decoration:none">Mission Brief</a>
+    <a href="#" style="font-size:0.7rem;color:var(--muted);text-decoration:none">Star Map</a>
+    <a href="#" style="font-size:0.7rem;color:var(--muted);text-decoration:none">Contact</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
